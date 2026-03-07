@@ -180,7 +180,7 @@
 | Mash pH | 5.2-5.4 | |
 | Pre-boil gravity | ~1.030 | **1.026** (temp-corrected @ 168°F) |
 | Pre-boil volume | ~6.23 gal | |
-| OG | ~1.038-1.043 | |
+| OG | ~1.038-1.043 | **1.042** ✅ |
 | FG | 1.006-1.008 | |
 | ABV | ~4.0% | |
 | Fermentation days | 14 | |
@@ -190,3 +190,5 @@
 - **2026-03-07:** Pump filter not installed (forgot before water fill). Plan to skip whirlpool or install after mash.
 - **2026-03-07:** Pre-boil gravity 1.024 (raw) / 1.026 (temp-corrected at ~168°F). Lower than target — estimated post-boil OG ~1.035 with sugar addition. Will be a lighter table saison (~3.5% ABV).
 - **2026-03-07:** Full-volume no-sparge BIAB method. 6.23 gal distilled + 5.5g CaCl₂.
+- **2026-03-07:** OG 1.042 pre-transfer — right on target! No sugar added (dropped from recipe). No orange zest (dropped). Coriander only at 5 min.
+- **2026-03-07:** Recipe changes from original: removed sugar, removed orange zest. Used Whirlfloc instead of Irish Moss. Added yeast nutrient.
