@@ -192,3 +192,32 @@
 - **2026-03-07:** Full-volume no-sparge BIAB method. 6.23 gal distilled + 5.5g CaCl₂.
 - **2026-03-07:** OG 1.042 pre-transfer — right on target! No sugar added (dropped from recipe). No orange zest (dropped). Coriander only at 5 min.
 - **2026-03-07:** Recipe changes from original: removed sugar, removed orange zest. Used Whirlfloc instead of Irish Moss. Added yeast nutrient.
+
+## 🔍 Post-Brew Lessons & Notes for Next Time
+
+### Water & Efficiency
+- **Reconsider water volume:** Brewfather calculated 6.23 gal for full-volume no-sparge, but we only got ~4.2 gal into the fermenter. That's a lot of loss. Next time either:
+  - Add more water (bump up 0.5-1 gal to account for real-world losses)
+  - Consider doing a sparge after all (pour-over or dunk sparge) to recover more wort
+  - Or accept lower volume and brew to a smaller batch size
+- **Efficiency was better than expected:** Pre-boil 1.026 concentrated to OG 1.042 without sugar — actual efficiency was likely higher than the 62% we plugged in for no-sparge. Recalculate for next batch.
+- **Revisit sparge vs no-sparge:** Full-volume no-sparge was simple but cost us volume. A light pour-over sparge with 1-2 gal would recover wort without much added complexity.
+
+### Setup Mistakes — DO THESE BEFORE ADDING WATER
+- ❌ **Forgot to install the basket seal (rubber gasket nozzle)** before filling — had to fish it in with a spoon while water was already in the kettle. Works but awkward.
+- ❌ **Forgot to install the pump filter (grain barrier)** before filling — couldn't install it during mash. Got lucky with a light grain bill and small hop charge; with a bigger recipe this could clog the pump.
+
+### SVBS Pre-Flight Checklist (use every time!)
+1. ✅ Basket seal on bottom TC flange
+2. ✅ Pump filter in base (cover drain hole)
+3. ✅ Recirc tube + RIMS diffuser attached
+4. ✅ Knockout tubing connected
+5. ✅ All valves closed
+6. THEN add water
+
+### Other Notes
+- pH strips were old and unreliable (read 3.4 which is impossibly low). Buy a digital pH meter for next brew.
+- Campden tablets not needed with distilled water.
+- Mash out to 168°F only needs ~5 min, not 10.
+- SVBS heats fast — reached 168°F in about 5 min from 156°F.
+- Whirlfloc tablet works fine as Irish Moss replacement.
