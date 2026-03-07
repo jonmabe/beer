@@ -1,0 +1,563 @@
+{
+  "name": "Half Blind Raven Table Saison v2",
+  "author": "Jon Mabe",
+  "type": "All Grain",
+  "_version": "2.20.3",
+  "path": "/",
+  "_init": true,
+  "hidden": false,
+  "searchTags": ["saison", "table saison", "farmhouse", "raven"],
+  "tags": null,
+  "notes": "Table saison inspired by Hitachino Nest Saison du Japon and Saison Dupont. Low ABV but drinks bigger than its gravity. High mash temp for body, structured fermentation ramp for glycerol and phenol production. Brew on Ss Brewtech SVBS.\n\nWater: Build from distilled water with brewing salts. Target chloride-forward profile (Cl:SO4 ~1.5:1) for malt perception and body.\n\nFermentation: Start cool (68°F/20°C), ramp 3-4°F/day to 78-80°F (25.6-26.7°C). M29 doesn't need extreme temps like 3724. Total fermentation ~2-3 weeks.\n\nDry hop Hallertau Blanc for 3 days max — goes grassy past that.\n\nHigh carbonation (3.0-3.2 vol) is critical — transforms mouthfeel from thin table beer to lively farmhouse ale.\n\nv1 Lessons: Mosaic/Galaxy were too fruity, 149°F mash was too fermentable, 2.4 vol CO2 was too flat, Belle Saison was too clean.",
+
+  "defaults": {
+    "preferred": "us",
+    "abv": "simple",
+    "attenuation": "normal",
+    "color": "srm",
+    "grainColor": "lovibond",
+    "gravity": "sg",
+    "ibu": "tinseth",
+    "temp": "f",
+    "volume": "gal",
+    "weight": "lb",
+    "hop": "oz",
+    "pressure": "psi",
+    "carbonation": "vol",
+    "altitude": "ft"
+  },
+
+  "style": {
+    "name": "Saison",
+    "category": "Strong Belgian Ale",
+    "categoryNumber": "25",
+    "styleLetter": "B",
+    "styleGuide": "BJCP 2021",
+    "type": "Pale Ale",
+    "abvMin": 3.5,
+    "abvMax": 9.5,
+    "ogMin": 1.048,
+    "ogMax": 1.065,
+    "fgMin": 1.002,
+    "fgMax": 1.008,
+    "ibuMin": 20,
+    "ibuMax": 35,
+    "colorMin": 5,
+    "colorMax": 22,
+    "lovibondMin": 5,
+    "lovibondMax": 22,
+    "carbMin": 2.8,
+    "carbMax": 3.5,
+    "buGuMin": 0.35,
+    "buGuMax": 0.62,
+    "rbrMin": 0.4,
+    "rbrMax": 0.71,
+    "_id": "default-86"
+  },
+  "carbonationStyle": {
+    "carbMin": 2.8,
+    "carbMax": 3.5,
+    "name": "Saison"
+  },
+  "styleCarb": true,
+
+  "equipment": {
+    "_id": "svbs-raven",
+    "name": "Ss Brewtech SVBS (5 gal)",
+    "batchSize": 18.927,
+    "fermenterVolume": 18.927,
+    "fermenterVolumeBeforeTopUp": 18.927,
+    "boilSize": 23.658,
+    "boilTime": 60,
+    "boilOffPerHr": 3.785,
+    "evaporationRate": 0.16,
+    "trubChillerLoss": 0.946,
+    "fermenterLoss": 1.893,
+    "fermenterLossEstimate": 0,
+    "bottlingVolume": 17.034,
+    "mashTunDeadSpace": 0,
+    "mashTunLoss": 0,
+    "efficiency": 69,
+    "brewhouseEfficiency": 69,
+    "mashEfficiency": 73,
+    "calcMashEfficiency": true,
+    "calcBoilVolume": true,
+    "efficiencyType": "Fermenter",
+    "grainAbsorptionRate": 0.96,
+    "waterGrainRatio": 3,
+    "waterCalculation": "Default_2",
+    "spargeWaterFormula": "BoilVolumeColdL - MashWaterL + (GrainAmountKg * GrainAbsorptionRate) + MashTunLossL",
+    "mashWaterFormula": "(GrainAmountKg * WaterGrainRatio) + MashTunDeadSpaceL",
+    "spargeWaterOverflow": "Top-Up",
+    "hopUtilization": 1,
+    "aromaHopUtilization": 0.23,
+    "calcAromaHopUtilization": true,
+    "hopstandTemperature": 80,
+    "hidden": false,
+    "_meta": {
+      "mashEfficiencyIsCalculated": true,
+      "efficiencyIsCalculated": true
+    }
+  },
+
+  "fermentables": [
+    {
+      "_id": "raven-pilsner",
+      "name": "Pilsner Malt",
+      "type": "Grain",
+      "origin": "Belgium",
+      "supplier": "Dingemans",
+      "grainCategory": "Base (Pilsner)",
+      "color": 1.6,
+      "amount": 2.948,
+      "percentage": 77.4,
+      "potential": 1.036,
+      "potentialPercentage": 78,
+      "diastaticPower": 70,
+      "protein": 11.5,
+      "moisture": 4.5,
+      "coarseFineDiff": 1.7,
+      "friability": 80,
+      "fgdb": 80,
+      "maxInBatch": 100,
+      "notFermentable": false,
+      "notes": "Belgian pilsner malt. Light color, high enzymatic power. Saison-authentic base. Perceived grapiness that defines Belgian-style beers."
+    },
+    {
+      "_id": "raven-wheat",
+      "name": "White Wheat Malt",
+      "type": "Grain",
+      "origin": "US",
+      "supplier": "",
+      "grainCategory": "Base (Wheat)",
+      "color": 2,
+      "amount": 0.340,
+      "percentage": 8.9,
+      "potential": 1.037,
+      "potentialPercentage": 80,
+      "maxInBatch": 60,
+      "notFermentable": false,
+      "notes": "Adds protein haze, head retention, and body. Bridge to Hitachino character."
+    },
+    {
+      "_id": "raven-munich",
+      "name": "Munich Malt I",
+      "type": "Grain",
+      "origin": "Germany",
+      "supplier": "",
+      "grainCategory": "Base (Munich)",
+      "color": 6,
+      "amount": 0.227,
+      "percentage": 6.0,
+      "potential": 1.035,
+      "potentialPercentage": 77,
+      "diastaticPower": 40,
+      "maxInBatch": 80,
+      "notFermentable": false,
+      "notes": "Adds dextrin complexity and malt depth without significant color impact."
+    },
+    {
+      "_id": "raven-carafoam",
+      "name": "Carafoam / Carapils",
+      "type": "Grain",
+      "origin": "Germany",
+      "supplier": "",
+      "grainCategory": "Crystal/Caramel",
+      "color": 2,
+      "amount": 0.113,
+      "percentage": 3.0,
+      "potential": 1.033,
+      "potentialPercentage": 72,
+      "maxInBatch": 20,
+      "notFermentable": false,
+      "notes": "Body insurance at low gravity. Adds foam stability and mouthfeel."
+    },
+    {
+      "_id": "raven-sugar",
+      "name": "Cane Sugar (White)",
+      "type": "Sugar",
+      "origin": "US",
+      "supplier": "",
+      "grainCategory": "Sugar",
+      "color": 0,
+      "amount": 0.181,
+      "percentage": 4.8,
+      "potential": 1.046,
+      "potentialPercentage": 100,
+      "maxInBatch": 20,
+      "notFermentable": false,
+      "notes": "Added at 10 min in boil. Boosts attenuation and drives ester/phenol production. Helps yeast finish dry."
+    }
+  ],
+
+  "hops": [
+    {
+      "_id": "raven-styrian60",
+      "name": "Styrian Goldings",
+      "origin": "Slovenia",
+      "type": "Pellet",
+      "use": "Boil",
+      "amount": 14.175,
+      "time": 60,
+      "alpha": 5.5,
+      "beta": 2.8,
+      "humulene": 30,
+      "myrcene": 30,
+      "caryophyllene": 10,
+      "farnesene": 3,
+      "cohumulone": 28,
+      "oil": 0.8,
+      "usage": "Bittering",
+      "notes": "Earthy, spicy bittering. Classic noble-adjacent hop. ~15 IBU contribution."
+    },
+    {
+      "_id": "raven-hblanc10",
+      "name": "Hallertau Blanc",
+      "origin": "Germany",
+      "type": "Pellet",
+      "use": "Boil",
+      "amount": 14.175,
+      "time": 10,
+      "alpha": 9.5,
+      "beta": 5,
+      "usage": "Flavor",
+      "notes": "White wine, fruity, floral character. Flavor addition at 10 min for restrained fruitiness."
+    },
+    {
+      "_id": "raven-hblancdh",
+      "name": "Hallertau Blanc",
+      "origin": "Germany",
+      "type": "Pellet",
+      "use": "Dry Hop",
+      "amount": 14.175,
+      "time": 4320,
+      "day": 11,
+      "alpha": 9.5,
+      "beta": 5,
+      "usage": "Aroma",
+      "notes": "Dry hop for 3 days MAX. Goes grassy past that. Restrained aroma — white wine, subtle fruit."
+    }
+  ],
+
+  "miscs": [
+    {
+      "_id": "raven-coriander",
+      "name": "Coriander Seed (Crushed)",
+      "type": "Spice",
+      "use": "Boil",
+      "amount": 2.5,
+      "amountIsWeight": true,
+      "time": 5,
+      "notes": "0.5 tsp crushed coriander seed. Background whisper, not a wit. Added at 5 min."
+    },
+    {
+      "_id": "raven-orangezest",
+      "name": "Orange Zest (Fresh)",
+      "type": "Spice",
+      "use": "Boil",
+      "amount": 6,
+      "amountIsWeight": true,
+      "time": 5,
+      "notes": "Zest of 1 navel or blood orange. NO pith (white part). Added at 5 min. Subtle citrus background."
+    }
+  ],
+
+  "yeasts": [
+    {
+      "_id": "raven-m29",
+      "name": "M29 French Saison",
+      "laboratory": "Mangrove Jack's",
+      "type": "Ale",
+      "form": "Dry",
+      "amount": 10,
+      "attenuation": 85,
+      "flocculation": "Low",
+      "minTemp": 18,
+      "maxTemp": 35,
+      "minAttenuation": 82,
+      "maxAttenuation": 88,
+      "productId": "M29",
+      "notes": "French Saison yeast. Peppery, spicy, proper saison phenols. No stall issues. ~85% attenuation — drier than 3724 alternatives but not bone-dry like BE-134. Pitch-and-forget dry yeast. Best of many worlds for this recipe."
+    }
+  ],
+
+  "mash": {
+    "_id": "raven-mash",
+    "name": "High Temp Single Infusion (Body)",
+    "steps": [
+      {
+        "name": "Saccharification (High - Body)",
+        "type": "Temperature",
+        "stepTemp": 68.9,
+        "stepTime": 60,
+        "rampTime": null
+      },
+      {
+        "name": "Mash Out",
+        "type": "Temperature",
+        "stepTemp": 75.6,
+        "stepTime": 10,
+        "rampTime": null
+      }
+    ]
+  },
+
+  "fermentation": {
+    "_id": "raven-ferm",
+    "name": "M29 Saison Ramp",
+    "steps": [
+      {
+        "type": "Primary",
+        "stepTemp": 20,
+        "stepTime": 2,
+        "name": "Clean Start (48hr hold at 68°F)"
+      },
+      {
+        "type": "Primary",
+        "stepTemp": 21.1,
+        "stepTime": 1,
+        "name": "Ramp Day 3 (70°F)"
+      },
+      {
+        "type": "Primary",
+        "stepTemp": 22.2,
+        "stepTime": 1,
+        "name": "Ramp Day 4 (72°F)"
+      },
+      {
+        "type": "Primary",
+        "stepTemp": 23.3,
+        "stepTime": 1,
+        "name": "Ramp Day 5 (74°F)"
+      },
+      {
+        "type": "Primary",
+        "stepTemp": 24.4,
+        "stepTime": 1,
+        "name": "Ramp Day 6 (76°F)"
+      },
+      {
+        "type": "Primary",
+        "stepTemp": 25.6,
+        "stepTime": 8,
+        "name": "Hold at Peak (78°F)"
+      }
+    ]
+  },
+
+  "carbonation": 3.1,
+
+  "water": {
+    "source": {
+      "_id": "distilled",
+      "name": "Distilled / RO Water",
+      "type": "source",
+      "calcium": 0,
+      "magnesium": 0,
+      "sodium": 0,
+      "chloride": 0,
+      "sulfate": 0,
+      "bicarbonate": 0,
+      "ph": 7,
+      "hardness": 0,
+      "alkalinity": 0,
+      "residualAlkalinity": 0,
+      "ionBalance": 0,
+      "ionBalanceOff": false,
+      "soClRatio": 0,
+      "cations": 0,
+      "anions": 0,
+      "bicarbonateMeqL": 0,
+      "residualAlkalinityMeqLCalc": 0
+    },
+    "mash": {
+      "_id": "raven-mash-water",
+      "name": "Distilled + Salts (Mash)",
+      "type": "source",
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "ph": 5.5,
+      "hardness": 162,
+      "soClRatio": 0.67,
+      "ionBalance": 0,
+      "ionBalanceOff": false
+    },
+    "sparge": {
+      "_id": "raven-sparge-water",
+      "name": "Distilled + Salts (Sparge)",
+      "type": "source",
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "ph": 5.5,
+      "soClRatio": 0.67,
+      "ionBalance": 0,
+      "ionBalanceOff": false
+    },
+    "total": {
+      "_id": "raven-total-water",
+      "name": "Distilled + Salts (Total)",
+      "type": "source",
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "ph": 5.5,
+      "soClRatio": 0.67,
+      "ionBalance": 0,
+      "ionBalanceOff": false
+    },
+    "settings": {
+      "adjustSparge": true,
+      "calciumSulfate": {
+        "auto": true,
+        "mash": true,
+        "sparge": true
+      },
+      "calciumChloride": {
+        "auto": true,
+        "mash": true,
+        "sparge": true,
+        "form": "dihydrate"
+      },
+      "magnesiumSulfate": {
+        "auto": true,
+        "mash": true,
+        "sparge": true
+      },
+      "sodiumBicarbonate": {
+        "auto": false,
+        "mash": true,
+        "sparge": false
+      },
+      "calciumHydroxide": {
+        "auto": false,
+        "mash": true,
+        "sparge": false
+      }
+    },
+    "mashAdjustments": {
+      "volume": 10.884,
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "calciumSulfate": null,
+      "calciumChloride": null,
+      "magnesiumSulfate": null,
+      "sodiumBicarbonate": null,
+      "calciumHydroxide": null,
+      "calciumCarbonate": 0,
+      "magnesiumChloride": 0,
+      "sodiumChloride": 0,
+      "sodiumMetabisulfite": 0,
+      "sodiumMetabisulfitePPM": 0,
+      "ltDWB": 0,
+      "ltAMS": 0,
+      "acids": [
+        {
+          "type": "lactic",
+          "amount": 0,
+          "concentration": 80,
+          "alkalinityMeqL": 0
+        }
+      ]
+    },
+    "spargeAdjustments": {
+      "volume": 13.72,
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "calciumSulfate": 0,
+      "calciumChloride": 0,
+      "magnesiumSulfate": 0,
+      "sodiumBicarbonate": 0,
+      "calciumHydroxide": 0,
+      "magnesiumChloride": 0,
+      "sodiumChloride": 0,
+      "sodiumMetabisulfite": 0,
+      "sodiumMetabisulfitePPM": 0,
+      "ltDWB": 0,
+      "ltAMS": 0,
+      "acids": [
+        {
+          "type": "lactic",
+          "amount": 0,
+          "concentration": 80
+        }
+      ]
+    },
+    "totalAdjustments": {
+      "volume": 24.604,
+      "calcium": 60,
+      "magnesium": 3,
+      "sodium": 5,
+      "chloride": 120,
+      "sulfate": 80,
+      "bicarbonate": 0,
+      "calciumSulfate": 0,
+      "calciumChloride": 0,
+      "magnesiumSulfate": 0,
+      "sodiumBicarbonate": 0,
+      "calciumHydroxide": 0,
+      "magnesiumChloride": 0,
+      "sodiumChloride": 0,
+      "sodiumMetabisulfite": 0,
+      "sodiumMetabisulfitePPM": 0,
+      "ltDWB": 0,
+      "ltAMS": 0
+    },
+    "enableSpargeAdjustments": true,
+    "acidPhAdjustment": 0,
+    "spargeAcidPhAdjustment": 0,
+    "dilutionPercentage": null,
+    "dilutionAmount": 0,
+    "mashPhDistilled": 5.72,
+    "mashPh": 5.35,
+    "meta": {
+      "equalSourceTotal": false
+    }
+  },
+
+  "ibuFormula": "tinseth",
+  "efficiency": 69,
+  "boilTime": 60,
+  "boilSize": 23.658,
+  "batchSize": 18.927,
+  "attenuation": 0.85,
+  "primaryTemp": 20,
+  "og": 1.040,
+  "fg": 0,
+  "fgEstimated": 1.006,
+  "manualFg": false,
+  "abv": 4.2,
+  "ibu": 22,
+  "color": 3.5,
+  "carbonation": 3.1,
+
+  "styleOg": false,
+  "styleFg": true,
+  "styleIbu": false,
+  "styleColor": false,
+  "styleAbv": true,
+  "styleBuGu": false,
+  "styleRbr": false,
+  "styleConformity": false,
+
+  "_type": "recipe",
+  "fgFormula": "normal"
+}
