@@ -181,8 +181,8 @@
 | Pre-boil gravity | ~1.030 | **1.026** (temp-corrected @ 168°F) |
 | Pre-boil volume | ~6.23 gal | |
 | OG | ~1.038-1.043 | **1.042** ✅ |
-| FG | 1.006-1.008 | |
-| ABV | ~4.0% | |
+| FG | 1.006-1.008 | **1.002** (hydrometer, temp-corrected from 1.000 @ 78°F) |
+| ABV | ~4.0% | **5.2%** (OG 1.042 → FG 1.002) |
 | Fermentation days | 14 | |
 | Carb volumes | 3.0-3.2 | |
 
